@@ -10,6 +10,14 @@
   <script src="https://cdn.auth0.com/js/lock-8.1.min.js"></script>
 
   <style>
+  #userProfilePic {
+      height: 50px;
+      width: 50px;
+      border-radius:50%;
+      vertical-align: middle;
+  }
+
+    
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -58,12 +66,14 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><button id="btn-login" class="btn-login">Login</button><li>
+        <img id="userProfilePic" src="images/questionMark.png" alt="User Profile Picture">
+        <li><button id="btn-login" class="btn-login" href="#">Login</button><li>
+        <li><a id='nick'>UsernameHere</a></li>
       </ul>
     </div>
   </div>
