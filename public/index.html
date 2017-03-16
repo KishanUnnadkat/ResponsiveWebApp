@@ -23,7 +23,6 @@
       border-radius:50%;
       vertical-align: middle;
   }
-
     
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -46,6 +45,8 @@
       background-color: #555;
       color: white;
       padding: 15px;
+      position: fixed;
+      bottom: 0;
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -80,6 +81,7 @@
       <ul class="nav navbar-nav navbar-right">
         <img id="userProfilePic" src="images/questionMark.png" alt="User Profile Picture">
         <li><button id="btn-login" class="btn-login" href="#">Login</button><li>
+        <li><button id="btn-logout" class="btn-logout" href="#">Logout</button></li>
         <li><a id='nick'>UsernameHere</a></li>
       </ul>
     </div>
